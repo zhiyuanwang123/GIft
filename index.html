@@ -2,16 +2,41 @@
 <html>
 <head>
 <title>A Gift From Girl's Who Code</title>
+<script>
+const mouseTarget = document.getElementById('mouseTarget');
+mouseTarget.addEventListener('mouseenter', e => {
+   mousetarget.style.fontSize = "80px";
+});
+
+mouseTarget.addEventListener('mouseleave', e => {
+   mousetarget.style.fontSize = "20px";
+});
+</script>
 <style>
 body {
   background-color: rgb(150,150,150);
   text-align: center;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  Background-image: url("background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .text{
   -webkit-animation:colorchange 10s infinite;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
+
+h3{
+  color: orange;
+  font-family: cursive;
+  Font-size: 40px;
+  -webkit-text-stroke-width: 0.05px;
+  -webkit-text-stroke-color: red;
+}
+
 @-webkit-keyframes colorchange {
       0% {
         color: red;
@@ -55,6 +80,10 @@ body {
     padding: 10px;
     border: 5px dotted gray;
     margin: auto; 
+    background-color: rgba(210, 210, 210, 0.8);
+    top: 0;
+    left: 0;
+    background-size: cover;
 }
 h1{
     color: rgb(14,165,170);
@@ -69,6 +98,7 @@ h1{
 </style>
 </head>
 <body>
+
 <div class="text">
 <img src="logo.png" style="width:200px">
 <h2>Since we do not want to open the plastic of the notebook</h2>
@@ -101,13 +131,18 @@ h1{
 <p><font style="color: rgb(0,48,48);//RGB color of your words">--Write your words here!....................</font></p>
 <p class = "names" style="color: rgb(255,0,0);//RGB Color of your name">-Your Name</font></p>
 
+<div id="mousetarget">
 <p><font style="color: rgb(0,48,48);//RGB color of your words">--Write your words here!....................</font></p>
 <p class = "names" style="color: rgb(255,0,0);//RGB Color of your name">-Your Name</font></p>
+</div>
 
 <p><font style="color: rgb(0,48,48);//RGB color of your words">--Write your words here!....................</font></p>
 <p class = "names" style="color: rgb(255,0,0);//RGB Color of your name">-Your Name</font></p>
-
 </div>
 </div>
+</div>
+</br>
+<h3><b>We all hope you guy have a great summer, see you guys next year!</b></h3>
+<p><font color=black>@Fake Copy Right--- 2019</font></p>
 </body>
 </html>
